@@ -15,6 +15,7 @@ body {
     font-size: 62.5%;
     background-color: #f3f3f3;
 }
+
 a {
     text-decoration: none;
     color: initial;
@@ -23,17 +24,21 @@ a {
 a.underlined {
     color: black;
 }
+
 a.underlined:hover {
     color: #e0415c;
 }
+
 header,
-.about-section {
+.about-section,
+.mid-section {
     width: 100%;
     display: flex;
     box-sizing: border-box;
 }
 
-.about-section {
+.about-section,
+.mid-section {
     gap: 3rem;
 }
 
@@ -63,10 +68,6 @@ footer {
 .about-section {
     padding: 3rem;
 }
-.mid-section {
-    display: flex;
-    gap: 3rem;
-}
 
 h1 {
     margin: 0 0 3rem;
@@ -78,12 +79,14 @@ h2 {
     margin: 0 0 1.5rem;
     font-size: clamp(1.6rem, 2rem, 2.4rem);
 }
+
 h3 {
     font-size: clamp(1.5rem, 1.9rem, 2.2rem);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-p, label {
+p,
+label {
     font-size: clamp(1.3rem, 1.5rem, 1.8rem);
 }
 
@@ -101,10 +104,12 @@ span {
 .socials {
     flex: 1;
 }
+
 .socials-wrapper {
     display: flex;
     gap: 1rem;
 }
+
 .socials-wrapper a {
     padding: .5rem;
     border-radius: 50% 50% 68% 32% / 57% 52% 48% 43%;
@@ -114,10 +119,12 @@ span {
 .socials-wrapper a:hover {
     background-color: #e0415c;
 }
-.socials-wrapper img{
+
+.socials-wrapper img {
     width: 3rem;
     height: 3rem;
-} 
+}
+
 .blob-container {
     width: 50rem;
     max-width: 100%;
@@ -133,9 +140,12 @@ span {
     background: #e0415c;
     border-radius: 44% 56% 70% 30% / 51% 53% 47% 49%;
 }
-.slider-container, .controls-wrapper {
+
+.slider-container,
+.controls-wrapper {
     display: flex;
 }
+
 .controls-wrapper {
     width: 35rem;
     max-width: 100%;
@@ -144,7 +154,7 @@ span {
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
     padding: 20px;
-    height: max-content;    
+    height: max-content;
     flex-direction: column;
     gap: 1rem;
 }
@@ -164,12 +174,13 @@ input[type="range"] {
     width: 100%;
     background: #252525;
     color: lightgray;
-    position: relative;
     border-radius: 4px;
 }
+
 #output {
     font-size: clamp(1.2rem, 1.3rem, 1.5rem);
 }
+
 #copy {
     margin: 1.5rem 0 0.5rem 0;
     width: 100%;
@@ -181,9 +192,11 @@ input[type="range"] {
     opacity: .85;
     font-weight: 600;
 }
+
 #copy:hover {
     opacity: 1;
 }
+
 .alternative {
     font-size: clamp(1rem, 1.15rem, 1.3rem);
 }
@@ -192,34 +205,41 @@ input[type="range"] {
 @media screen and (max-width: 900px) {
 
     header,
-    footer,
-    .about {
+    footer {
         padding: 3rem;
     }
 
-.top-section,
-.mid-section,
-.about-section {
-    padding: 2rem;
-}
-   .main-container {
-    max-width: 85rem;
-   }
-   .FAQ {
-    max-width: 50rem;
-   }
+    .top-section,
+    .mid-section,
+    .about-section {
+        padding: 2rem;
+    }
+
+    .main-container {
+        max-width: 85rem;
+    }
+
+    .FAQ {
+        max-width: 50rem;
+    }
 
 }
 
 @media screen and (max-width:768px) {
-    .mid-section, .about-section {
+
+    .mid-section,
+    .about-section {
         flex-direction: column;
+        gap: 2.6rem;
     }
 
     .blob-container {
         max-height: 40rem;
+        margin: 0 0 1rem;
     }
-    .blob-container, .controls-wrapper {
+
+    .blob-container,
+    .controls-wrapper {
         width: 100%;
         max-width: 50rem;
         margin: auto;
