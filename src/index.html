@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shappd is a design tool that helps you craft unique and good looking custom shapes with the CSS
+    border property.">
+    <title>Shappd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header and navigation begins here -->
+    <header>
+        <a href="/"><h3>SHAPPD</h3></a>
+        
+        <div class="left-header">
+            <!-- Star on GitHub button -->
+            <a class="github-button" href="https://github.com/amissah17/shappd2" data-icon="octicon-star"
+                aria-label="Star amissah17/blob-with-border on GitHub">Star on GitHub</a>
+        </div>
+    </header>
+    <!-- End of header section -->
+    <div class="main-container">
+        <section class="top-section">
+            <h1>Transform Your Border Designs with <span>Shappd.</span></h1>
+
+            <p>Craft unique, attention-grabbing blobs effortlessly, and give your projects the edge they deserve.
+                Whether
+                you're
+                a coding pro or a design enthusiast, <span>Shappd</span> makes your creative dreams a
+                reality.
+                Start shaping
+                brilliance today!</p>
+        </section>
+
+        <section class="mid-section">
+            <!-- shape begins below this line -->
+            <div class="blob-container">
+                <div id="blob"></div>
+            </div>
+
+            <!-- implementing the border controls with input elements -->
+            <div class="controls-wrapper">
+
+                <div class="slider-container">
+                    <label for="top">Top:</label>
+                    <input type="range" value="44" min="0" max="100" name="top" id="top">
+                </div>
+                <div class="slider-container">
+                    <label for="tR">Right:</label>
+                    <input type="range" value="53" min="0" max="100" name="right" id="right">
+                </div>
+                <div class="slider-container">
+                    <label for="bottom">Bottom</label>
+                    <input type="range" value="70" min="0" max="100" name="bottom" id="bottom"><br />
+                </div>
+                <div class="slider-container">
+                    <label for="left">Left:</label>
+                    <input type="range" value="51" min="0" max="100" name="left" id="left"><br />
+                </div>
+
+                <!--implementing the design code output -->
+                <div>
+                    <p class="code-output" id="output">border-radius: value </p>
+                    <div>
+                        <button id="copy">Copy</button> 
+                        <p class="alternative">You can also use <b>ctrl + c</b></p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- controls html end here -->
+        </section>
+
+        <section class="about-section">
+
+            <div class="FAQ">
+                <div class="wrapper">
+                    <h2>What is it?</h2>
+                    <p>
+                        Shappd is a design tool that helps you craft unique and good looking custom shapes
+                        with
+                        the CSS
+                        border property.
+
+                        This tool is a good fit when you need blob shapes for your elements.
+                    </p>
+                </div>
+                <div class="wrapper">
+                    <h2>How does Blobmaker work?</h2>
+                    <p>
+                        You can create your custom shapes by moving the sliders &mdash;on the right&mdash; around until
+                        you
+                        find a
+                        shape
+                        that you
+                        like. And then copy the property values below using the copy button or <strong>ctrl + c</strong>
+                    </p>
+                </div>
+                <div class="wrapper">
+                    <h2>Can I download the design in svg or png format?</h2>
+                    <p>No!, but what you can do is to copy the property values and paste it in your code where you need
+                        that
+                        shape.<br />
+
+                        However, you can try other tools like <a href="http://blobmaker.app" class="underlined"
+                            target="_blank" rel="noopener noreferrer">blobmaker</a> which lets you export SVG or PNG
+                        images of the
+                        shapes you
+                        make.
+                    </p>
+                </div>
+            </div>
+
+            <div class="socials">
+                <h2>Let's Connect &mdash;</h2>
+                <div class="socials-wrapper">
+                    <a href="https://github.com/amissah17" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/github.svg" alt="GitHub icon"></a>
+                    <a href="https://twitter.com/amotabil8" target="_blank" rel="noopener noreferrer"><img
+                            src="../assets/twitterx.svg" alt="Twitter icon"></a>
+                    <a href="https://www.linkedin.com/in/frank-amissah-208b37267/" target="_blank"
+                        rel="noopener noreferrer"><img src="../assets/linkedin.svg" alt="LinkedIn icon"></a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <p>Copyright &copy Amissah Frank</p>
+    </footer>
+
+    <script src="./index.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
