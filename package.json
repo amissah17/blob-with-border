@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.0"
+  },
   "devDependencies": {
     "eslint": "^8.51.0",
     "parcel": "^2.10.0"
